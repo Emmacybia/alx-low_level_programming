@@ -2,9 +2,7 @@
 /**
  * main - Entry point
  *
- * Decription: using the main funtion 
- * this program prints "Programming is positive, zero or negative"
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
