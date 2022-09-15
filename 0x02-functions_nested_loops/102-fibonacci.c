@@ -13,7 +13,8 @@ int main(void)
 {
 	long int i, j, k, next;
 
-	j = 1;	
+	j = 1;
+
 	k = 2;
 
 	for (i = 1; i <= 50; ++i)
@@ -28,7 +29,7 @@ int main(void)
 		}
 		next = j + k;
 		j = k;
-		j = next;
+		k = next;
 	}
 
 	return (0);
