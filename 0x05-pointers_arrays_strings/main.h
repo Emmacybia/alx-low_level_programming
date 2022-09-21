@@ -3,17 +3,17 @@
 
 #include <stdio.h>
 
-Int _putchar(char c);
-Void reset_to_98(int *n);
-Void swap_int(int *a, int *b);
-Int _strlen(char *s);
-Void _puts(char *str);
-Void print_rev(char *s);
-Void rev_string(char *s);
-Void puts2(char *str);
-Void puts_half(char *str);
-Void print_array(int *a, int n);
-Char *_strcpy(char *dest, char *src);
-Int _atoi(char *s);
+int _putchar(char c);
+void reset_to_98(int *n);
+void swap_int(int *a, int *b);
+int _strlen(char *s);
+void _puts(char *str);
+void print_rev(char *s);
+void rev_string(char *s);
+void puts2(char *str);
+void puts_half(char *str);
+void print_array(int *a, int n);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
 
 #endif /* MAIN_H */
