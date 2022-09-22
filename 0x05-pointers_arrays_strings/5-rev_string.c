@@ -10,23 +10,24 @@
 
 void rev_string(char *s)
 {
-	int l, i;
+	char tmp;
 
-	char ch;
+	int i, len, len1;
 
-	/*find string length without null char*/
-	for
+	len = 0;
+	len1 = 0;
+
+	while (s[len] != '\0')
 	{
-		(l = 0; s[l] != '\0'; ++l);
+		len++;
 	}
-	/*swap the string by looping to half the string*/
-	for (i = 0; i < l / 2; ++i)
+
+	len1 = len - 1;
+
+	for (i = 0; i < len / 2; ++i)
 	{
-		ch = s[i];
-
-		s[i] = s[l – 1 – i];
-
-		/*-1 because the array star ts from 0*/
-		s[l – 1 – i] = ch;
+		tmp = s[i];
+		s[i] = s[len1];
+		s[len1--] tmp;
 	}
 }
