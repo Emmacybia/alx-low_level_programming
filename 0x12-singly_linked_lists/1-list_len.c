@@ -1,20 +1,19 @@
-#include <stdio.h>
 #include "lists.h"
 /**
- * list_len - imprime numero de elementos vinculados
- * @h: puntero a structura
- * Return: Retorna numero de elementos vinculados
- **/
+ * list_len - returns then number of elements in a list.
+ * @h: singly linked list.
+ * Return: number of elements in the list.
+ */
+
 size_t list_len(const list_t *h)
 {
-	const list_t *pointer;
-	unsigned int i;/* obtendra numero de elementos vinculados*/
+	size_t nelem;
 
-	pointer = h;/*puntero a puntero*/
-
-	for (i = 0; pointer; i++)
+	nelem = 0;
+	while (h != NULL)
 	{
-		pointer = pointer->next;
+		h = h->next;
+		nelem++;
 	}
-	return (i);
+	return (nelem);
 }
